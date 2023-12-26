@@ -3,13 +3,13 @@ VBT-X is a diversity-aware fairness testing approach for black-box machine learn
 VBT-X improves verification-based testing (VBT), another fairness testing approach, with a sampling technique.
 We first reimplement VBT, referring to [the source code of VBT](https://github.com/arnabsharma91/fairCheck), and then implement the sampling technique.
 
-Refer to our paper [SSBSE'22](https://link.springer.com/chapter/10.1007/978-3-031-21251-2_3) for more technical details.
+Refer to our paper [IST'23](https://doi.org/10.1016/j.infsof.2023.107390) for more technical details.
 The experimental results of the evaluation of VBT-X are available in
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10252552.svg)](https://doi.org/10.5281/zenodo.10252552).
 
 ## Contributors
 VBT-X was proposed by [Zhenjiang Zhao](https://zhenjiang-zhao.github.io/), Takahisa Toda and Takashi Kitamura.
-The implementation was performed by [Zhenjiang Zhao](https://zhenjiang-zhao.github.io/).
+The implementation was performed by Zhenjiang Zhao.
 
 ## Contents
 - [Requirements](#requirements)
@@ -125,16 +125,21 @@ The results in `DiscData` are interpreted in the same as above,
 except that a pair of two consecutive rows represents a test case.
 
 ## How to cite
-If you use the VBT-X, please cite our paper [SSBSE'22](https://link.springer.com/chapter/10.1007/978-3-031-21251-2_3). 
+If you use the VBT-X, please cite our paper [IST'23](https://doi.org/10.1016/j.infsof.2023.107390). 
 
 Bibtex:
 ```
-@InProceedings{zhao2022ssbse,
-author="Zhao, Zhenjiang and Toda, Takahisa and Kitamura, Takashi",
-title="Efficient Fairness Testing Through Hash-Based Sampling",
-booktitle="Search-Based Software Engineering",
-year="2022",
-pages="35--50"
+@article{zhao2023ist,
+title = {Diversity-aware fairness testing of machine learning classifiers through hashing-based sampling},
+journal = {Information and Software Technology},
+volume = {167},
+pages = {107390},
+year = {2024},
+issn = {0950-5849},
+doi = {https://doi.org/10.1016/j.infsof.2023.107390},
+url = {https://www.sciencedirect.com/science/article/pii/S0950584923002458},
+author = {Zhenjiang Zhao and Takahisa Toda and Takashi Kitamura},
+keywords = {Algorithm fairness, Fairness testing, SAT/SMT solving, Constraint sampling, Hashing-based technique}
 }
 ```
 ## License
